@@ -1,0 +1,262 @@
+* {
+    /* background-color: rgb(245, 245, 245); */
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#navbar .main ul {
+    display: flex;
+}
+#navbar .main ul li {
+    list-style: none;
+}
+#navbar .main ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+#logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    outline: 4px solid rgb(184, 95, 79);
+    outline-offset: -4px;
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(240, 142, 125);
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    z-index: -1;
+}
+#navbar ul li a:hover {
+    color: rgb(126, 57, 45);
+}
+.btn button:hover {
+    background-color: rgb(231, 127, 108);
+    cursor: pointer;
+}
+#name {
+    font-size: 20px;
+}
+.main {
+    margin: 20px;
+}
+#search {
+    background-image: url("search.png  ");
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 5px 50px;
+    border-radius: 10px;
+    width: 350px;
+    background-color: rgb(255, 252, 252);
+    border: 1px solid black;
+    margin-left: 40px;
+}
+.btn button {
+    background-color: rgb(240, 142, 125);
+    border: none;
+    margin: 0px 15px;
+}
+#home {
+    display: flex;
+    /* width: fit-content; */
+    overflow: auto;
+    /* white-space: nowrap; */
+    align-items: center;
+    text-align: center;
+}
+.set {
+    display: block;
+    padding: 15px;
+    margin: 5px;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(251, 248, 248);
+    border: 1px solid rgb(246, 181, 169);
+    border-radius: 20px;
+}
+#home .set p {
+    padding: 5px;
+    text-align: center;
+}
+
+#drop{
+    display: none;
+}
+#cat:focus-within #drop {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: none;
+}
+.drp{
+    background-color: rgb(255, 254, 254);
+    border: 0.1px solid rgb(240, 142, 125);
+    display: block;
+}
+      
+#clothes{
+    border: 10px solid rgb(240, 142, 125); 
+    margin: 5px;
+}
+#footwear{
+    border: 10px solid rgb(240, 142, 125); 
+    margin: 5px;
+}
+.wearbtn{
+    border: 1px solid white;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.wearbtn:active{
+    background-color: rgb(234, 233, 233);
+    font-weight: bold;
+}
+.wear img{
+    height: 300px;
+}
+.wear{
+    display: grid;
+    grid-template-areas: 
+    'wearbtn1 wearbtn2 wearbtn5'
+    'wearbtn3 wearbtn4 wearbtn6';
+}
+#wearbtn1{
+    grid-area: wearbtn1;
+}
+#wearbtn2{
+    grid-area: wearbtn2;
+}
+#wearbtn3{
+    grid-area: wearbtn3;
+}
+#wearbtn4{
+    grid-area: wearbtn4;
+}
+#wearbtn5{
+    grid-area: wearbtn5;
+}
+#wearbtn6{
+    grid-area: wearbtn6;
+}
+.foot img{
+    height: 200px;
+    width:300px;
+}
+.foot{
+    margin: 10px;
+    display: grid;
+    grid-gap:1rem;
+    grid-template-areas: 
+    'footbtn1 footbtn2 footbtn3 footbtn4'
+    'footbtn5 footbtn6 footbtn7 footbtn8';
+}
+#footbtn1{
+    grid-area: footbtn1;
+}
+#footbtn2{
+    grid-area: footbtn2;
+}
+#footbtn3{
+    grid-area: footbtn3;
+}
+#footbtn4{
+    grid-area: footbtn4;
+}
+#footbtn5{
+    grid-area: footbtn5;
+}
+#footbtn6{
+    grid-area: footbtn6;
+}
+#footbtn7{
+    grid-area: footbtn7;
+}
+#footbtn8{
+    grid-area: footbtn8;
+}
+.footbtn{
+    background-color:white;
+    border: none;
+    margin: 10px 0px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footbtn:focus{
+    border: 1px solid rgb(213, 212, 212);
+}
+#brand{
+    margin: 15px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 200px;
+    width: 200px;
+    margin: 22px;
+    border-radius: 100px;
+}
+#we::before{
+   content: "";
+   background-image: url("geometry7.jpg");
+   position: absolute;
+   height: 400px;
+   width:100% ;
+   z-index: -1;
+}
+#we{
+    margin: 30px 0px;
+}
+#center{
+    grid-area: center;
+    text-align: center;
+    background-color:rgb(240, 142, 125) ;
+    padding: 5px 0px;
+}
+.us{
+    display: grid;
+    /* grid-gap:1rem;  */
+    /* grid-template-columns:auto auto auto auto; */
+    grid-template-areas: 
+    'features app customer'
+    'features visit customer'
+    'center center center';
+}
+#features{
+    grid-area: features;
+}
+/* #center{
+    grid-area: center;
+  } */
+#app{
+    grid-area: app;
+}
+#visit{
+    grid-area: visit;
+}
+#customer{
+    grid-area: customer;
+}
+#features,#visit,#app,#customer{
+    margin:20px 100px;
+}
+#features p,#visit p,#app p,#customer p{
+    font-size: 15px;
+    color:rgb(111, 54, 44) ;
+}
+button{
+    cursor: pointer;
+}
